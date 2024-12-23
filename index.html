@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect - Collaborate & Learn</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">CampusConnect</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#collaborate">Collaborate</a></li>
+            <li><a href="#events">Events</a></li>
+        </ul>
+        <button class="login-btn" onclick="toggleModal()">Login</button>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Welcome to CampusConnect</h1>
+            <p>Collaborate, Learn, and Grow Together</p>
+            <button class="cta-btn" onclick="joinNow()">Join Now</button>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Active Projects</h2>
+            <div class="project-grid" id="projectGrid">
+                <!-- Projects will be dynamically added here -->
+            </div>
+        </section>
+
+        <section id="collaborate" class="collaborate">
+            <h2>Start Collaborating</h2>
+            <div class="collab-form">
+                <input type="text" id="projectTitle" placeholder="Project Title">
+                <textarea id="projectDesc" placeholder="Project Description"></textarea>
+                <button onclick="createProject()">Create Project</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="toggleModal()">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 CampusConnect. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Collaboration Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            <span>StudentCollab</span>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#discussions">Discussions</a>
+            <a href="#resources">Resources</a>
+        </div>
+        <div class="user-section">
+            <button class="notification-btn"><i class="fas fa-bell"></i></button>
+            <div class="user-profile">
+                <img src="avatar.png" alt="User">
+                <span>John Doe</span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>Collaborate Beyond Campus</h1>
+            <p>Connect, Create, and Learn Together</p>
+            <button class="cta-button">Get Started</button>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <i class="fas fa-users"></i>
+                <h3>Team Projects</h3>
+                <p>Work together on assignments and research</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-comments"></i>
+                <h3>Discussion Forums</h3>
+                <p>Exchange ideas and knowledge</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-file-alt"></i>
+                <h3>Resource Sharing</h3>
+                <p>Share study materials and notes</p>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2>Active Projects</h2>
+            <div class="project-grid">
+                <!-- Project cards will be dynamically added here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>Empowering student collaboration worldwide</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Collaboration Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            <span>StudentCollab</span>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#discussions">Discussions</a>
+            <a href="#resources">Resources</a>
+        </div>
+        <div class="user-section">
+            <button class="notification-btn"><i class="fas fa-bell"></i></button>
+            <div class="user-profile">
+                <img src="avatar.png" alt="User">
+                <span>John Doe</span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>Collaborate Beyond Campus</h1>
+            <p>Connect, Create, and Learn Together</p>
+            <button class="cta-button">Get Started</button>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <i class="fas fa-users"></i>
+                <h3>Team Projects</h3>
+                <p>Work together on assignments and research</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-comments"></i>
+                <h3>Discussion Forums</h3>
+                <p>Exchange ideas and knowledge</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-file-alt"></i>
+                <h3>Resource Sharing</h3>
+                <p>Share study materials and notes</p>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2>Active Projects</h2>
+            <div class="project-grid">
+                <!-- Project cards will be dynamically added here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>Empowering student collaboration worldwide</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
